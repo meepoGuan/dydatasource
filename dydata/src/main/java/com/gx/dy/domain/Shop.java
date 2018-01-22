@@ -4,6 +4,14 @@ import java.io.Serializable;
 
 import org.apache.ibatis.type.Alias;
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @Alias("shop")
 public class Shop implements Serializable{
 

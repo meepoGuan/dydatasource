@@ -13,6 +13,14 @@ import com.gx.dy.anno.DataSourceTypeAnno;
 import com.gx.dy.config.DataSourceContextHolder;
 import com.gx.dy.config.DataSourceEnum;
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @Component
 @Aspect
 public class DataSourceAspect {

@@ -8,6 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gx.dy.service.ShopService;
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @RestController
 @RequestMapping("api")
 public class ShopController {

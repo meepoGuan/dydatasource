@@ -8,6 +8,14 @@ import com.gx.dy.anno.DataSourceTypeAnno;
 import com.gx.dy.config.DataSourceEnum;
 import com.gx.dy.domain.Shop;
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @Mapper
 public interface ShopMapper {
 

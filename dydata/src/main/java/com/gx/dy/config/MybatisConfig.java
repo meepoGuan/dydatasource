@@ -23,6 +23,14 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import com.gx.dy.plugin.PagePlugin;
 
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @Configuration
 @MapperScan(basePackages = "com.gx.dy.mapper")
 public class MybatisConfig {

@@ -7,6 +7,14 @@ import java.lang.annotation.Target;
 
 import com.gx.dy.config.DataSourceEnum;
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface DataSourceTypeAnno {

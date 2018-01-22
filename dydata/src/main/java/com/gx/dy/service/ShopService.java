@@ -9,6 +9,14 @@ import org.springframework.stereotype.Service;
 import com.gx.dy.domain.Shop;
 import com.gx.dy.mapper.ShopMapper;
 
+/**
+ * @author MeepoGuan
+ *
+ * <p>Description: </p>
+ *
+ * 2018年1月22日
+ *
+ */
 @Service
 public class ShopService {
 
