@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gx.dy.mapper.ShopMapper">
+    
+	 <select id="getAllShop" resultType="shop">
+	 select id, shop_name as shopname from t_shop 
+	 </select>
+      
+   	 <select id="getAllShopByTx1" resultType="shop">
+		 select id, shop_name as shopname from t_shop 
+	 </select>
+	 <select id="getAllShopByTx2" resultType="shop">
+	 select id, shop_name as shopname from t_shop 
+	 </select>
+	 <select id="getAllShopByTx3" resultType="shop">
+	 select id, shop_name as shopname from t_shop 
+	 </select>  
+</mapper>
