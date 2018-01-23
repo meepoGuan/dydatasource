@@ -5,10 +5,12 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
+import org.apache.ibatis.io.VFS;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
+import org.mybatis.spring.boot.autoconfigure.SpringBootVFS;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
@@ -85,6 +87,7 @@ public class MybatisConfig {
                                                @Value("mybatis.typeAliasesPackage") String typeAliasesPackage,
                                                @Value("mybatis.mapperLocations") String mapperLocations) throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
+        VFS.addImplClass(SpringBootVFS.class);
         factoryBean.setDataSource(dynamicDataSource);// 指定数据源(这个必须有，否则报错)
         factoryBean.setTypeAliasesPackage("com.gx.dy.domain");
     	org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();//设置可以返回值为null的字段
@@ -93,7 +96,7 @@ public class MybatisConfig {
     	factoryBean.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
         PagePlugin plu = new PagePlugin();
         factoryBean.setPlugins(new Interceptor[]{plu});
-        return factoryBean.getObject();
+        return factoryBean.getObject(); 
     }
 
     /**
